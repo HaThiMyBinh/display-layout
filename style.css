@@ -1,0 +1,122 @@
+/* ===========================
+   Body — Font & căn giữa
+   =========================== */
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+/* ===========================
+   H1 — Tiêu đề trang
+   display: block (mặc định)
+   chiếm toàn bộ chiều rộng
+   =========================== */
+h1 {
+    display: block;
+    background-color: #2980b9;
+    color: white;
+    padding: 20px;
+    margin: 0 0 10px 0;
+    font-size: 1.8rem;
+    max-width: 100%;
+}
+
+/* ===========================
+   NAV — Thanh điều hướng
+   Các thẻ <a> dùng display: inline-block
+   để xếp ngang nhau
+   =========================== */
+nav {
+    background-color: #1a6496;
+    padding: 10px 0;
+    margin-bottom: 20px;
+}
+
+nav a {
+    display: inline-block;       /* xếp ngang, có thể đặt width/padding */
+    margin: 0 15px;
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    font-size: 14px;
+    padding: 6px 12px;
+    border-radius: 4px;
+    transition: background-color 0.2s;
+}
+
+nav a:hover {
+    background-color: #2980b9;
+}
+
+/* ===========================
+   SECTION — Vùng chứa 3 cột
+   =========================== */
+section {
+    margin-top: 20px;
+    max-width: 960px;            /* giới hạn độ rộng tối đa */
+    margin-left: auto;
+    margin-right: auto;
+    /* font-size: 0 để loại bỏ khoảng trắng giữa inline-block */
+    font-size: 0;
+}
+
+/* ===========================
+   .box — Cột nội dung
+   display: inline-block để 3 cột xếp cạnh nhau
+   =========================== */
+.box {
+    display: inline-block;       /* xếp ngang nhau */
+    width: 30%;                  /* mỗi cột chiếm 30% */
+    padding: 20px;
+    background-color: lightblue;
+    margin: 10px;
+    border-radius: 6px;
+    border: 1px solid #7fb3d3;
+    vertical-align: top;         /* căn theo đỉnh khi chiều cao khác nhau */
+    font-size: 14px;             /* khôi phục font-size đã đặt 0 ở section */
+    box-sizing: border-box;
+    transition: background-color 0.2s, transform 0.2s;
+}
+
+.box:hover {
+    background-color: #aed6f1;
+    transform: translateY(-3px);
+}
+
+.box h3 {
+    font-size: 16px;
+    color: #1a5276;
+    margin-bottom: 10px;
+}
+
+.box p {
+    font-size: 13px;
+    line-height: 1.6;
+    color: #555;
+    text-align: left;
+}
+
+.box code {
+    background-color: #d6eaf8;
+    padding: 1px 5px;
+    border-radius: 3px;
+    font-size: 12px;
+    color: #1a5276;
+}
+
+/* ===========================
+   FOOTER — Cuối trang
+   display: block (mặc định)
+   =========================== */
+footer {
+    display: block;
+    background-color: #2c3e50;
+    color: #ccc;
+    padding: 15px;
+    margin-top: 30px;
+    font-size: 13px;
+}
